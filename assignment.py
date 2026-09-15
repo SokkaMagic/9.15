@@ -2,9 +2,11 @@
 # Exercise 1
 
 def find_all_positions(data, target):
-    # Write your code here
-    pass
-
+    lst=[]
+    for i in range(len(data)):
+        if target == data[i]:
+            lst.append(i)
+    return lst
 # Exercise 2
 def find_student_by_id(records, student_id):
     # Write your code here

@@ -35,7 +35,8 @@ def binary_search_steps(data, target):
         else:
             high = mid - 1  # target is in the left half
 
-    return [-1,steps+1]
+    return [-1,steps]
+
 
 
 

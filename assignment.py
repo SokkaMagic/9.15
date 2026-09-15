@@ -49,5 +49,13 @@ def find_insert_position(data, value):
 
 # Exercise 5
 def first_and_last_position(data, target):
-    # Write your code here
-    pass
+    lst=[]
+    last=0
+    for i in range(len(data)):
+        if target==data[i]:
+            lst.append(i)
+            for j in range(i+1, len(data)):
+                if target == data[j]:
+                    last=j
+    return [lst[0], last]
+

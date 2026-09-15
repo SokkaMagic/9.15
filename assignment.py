@@ -54,8 +54,8 @@ def first_and_last_position(data, target):
     for i in range(len(data)):
         if target==data[i]:
             lst.append(i)
+            last =i
             for j in range(i+1, len(data)):
                 if target == data[j]:
                     last=j
     return [lst[0], last]
-

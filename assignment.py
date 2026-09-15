@@ -9,8 +9,11 @@ def find_all_positions(data, target):
     return lst
 # Exercise 2
 def find_student_by_id(records, student_id):
-    # Write your code here
-    pass
+    for i in range(len(records)):
+        if student_id == records[i][0]:
+            return records[i][1]
+
+
 
 # Exercise 3
 def binary_search_steps(data, target):
